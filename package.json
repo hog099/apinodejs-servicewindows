@@ -1,0 +1,48 @@
+{
+  "name": "nodeprinter",
+  "version": "1.0.0",
+  "description": "API nodejs base para criação de um serviço no windows.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "start": "node dist/server.js",
+    "pm2start": "pm2 start dist/server.js --name brajanfood",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "date-fns": "^2.8.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-react-views": "^0.11.0",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "pg": "^7.14.0",
+    "pg-hstore": "^2.3.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "sequelize": "^5.21.2",
+    "serve-favicon": "^2.5.0",
+    "sharp": "^0.23.3",
+    "socket.io": "^2.3.0",
+    "youch": "^2.0.10",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "node-windows": "^1.0.0-beta.1",
+    "nodemon": "^2.0.1",
+    "prettier": "^1.19.1",
+    "sequelize-cli": "^5.5.1",
+    "sucrase": "^3.14.0"
+  }
+}
